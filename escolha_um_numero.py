@@ -1,25 +1,25 @@
 from random import randint
 
 
-class NumberGame:
+class JogoDosNumeros:
     def __init__(self):
         self.numero = randint(1, 100)
-        self.valor_pos = {}
-        self.valor = []
+        self.index_valor_testado = {}
+        self.valores_testados = []
         self.tentativa = 0
 
-    def escolhe_recursivo(self):
+    def escolhe_numero(self):
         entrada = int(input("Digite um número: "))
-        self.valor.append(entrada)
-        self.valor_pos[self.tentativa] = entrada
+        self.valores_testados.append(entrada)
+        self.index_valor_testado[self.tentativa] = entrada
         if entrada == self.numero:
             print(f'Você acertou. O número é {entrada}')
-            print(f'Você tentou os valores: {self.valor}')
-            print(f'Você tentou os valores: {self.valor_pos}')
+            print(f'Você tentou os valores: {self.valores_testados}')
+            print(f'Você tentou os valores: {self.index_valor_testado}')
             return entrada
         self.tentativa += 1
-        self.escolhe_recursivo()
+        self.escolhe_numero()
 
 
 if __name__ == "__main__":
-    NumberGame().escolhe_recursivo()
+    JogoDosNumeros().escolhe_numero()
