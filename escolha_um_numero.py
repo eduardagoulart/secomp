@@ -21,5 +21,11 @@ class JogoDosNumeros:
         self.escolhe_numero()
 
 
+numero = randint(0, 100)
+entrada = int(input("Digite um número entre [0, 100]: "))
+while entrada != numero:
+
+    entrada = int(input("Digite um número entre [0, 100]: "))
+
 if __name__ == "__main__":
     JogoDosNumeros().escolhe_numero()
