@@ -15,11 +15,13 @@ else:
 
 print(peso)
 
+
 # -------------------------------------------- // ------------------------------------------
 
 def calcula_peso(sexo, h):
     if sexo == 'm':
         return (72.7 * h) - 58
     return (62.1 * h) - 44.7
+
 
 calcula_peso(sexo, h)
