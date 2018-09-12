@@ -13,9 +13,9 @@ class JogoDosNumeros:
         self.valores_testados.append(entrada)
         self.index_valor_testado[self.tentativa] = entrada
         if entrada == self.numero:
-            print('Você acertou. O número é {}'.format(entrada))
-            print('Você tentou os valores: {}'.format(self.valores_testados))
-            print('Você tentou os valores: {}'.format(self.index_valor_testado))
+            print(f'Você acertou. O número é {entrada}')
+            print(f'Você tentou os valores: {self.valores_testados}')
+            print(f'Você tentou os valores: {self.index_valor_testado}')
             return entrada
         else:
             if entrada > self.numero:
