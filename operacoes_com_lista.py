@@ -25,3 +25,7 @@ print(f'concatenação {lista_str+lista_exemplo}\n')
 
 lista_valores = [x for x in range(1, 10)]
 print(f'list comprehension: {lista_valores}')
+lista_teste = []
+for i in range(1,10):
+    lista_teste.append(i)
+print(lista_teste)

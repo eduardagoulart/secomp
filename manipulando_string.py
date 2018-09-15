@@ -21,7 +21,7 @@ print(string_teste.title())
 print('---- '* 10)
 
 print('split()')
-print(string_teste.split())
+print(string_teste.split('a'))
 print('---- '* 10)
 
 print('join()')
