@@ -1,7 +1,7 @@
 ## Secomp
 minicurso da VIII Secomp da UFSJ - Introdução ao Python
 
-# No terminal digite:
+# No shell do python:
 ```python
 >>> import this
 ```
